@@ -1,10 +1,11 @@
 package app;
 import bank.Card;
+import data.Client;
 
 public class App {
     public static void main(String[] args) {
-        Card card1 = new Card();
-        System.out.println("Card number: " + card1.getCARD_NUMBER()
-                + "\nPin Code: " + card1.getPinCode());
+        Client Nikita = new Client("Nikita", "Kurakin", true);
+        System.out.println("Full Name: " + Nikita.getName() + " " + Nikita.getSurname() +
+                "\nCard Number: " + Nikita.getCard().getCARD_NUMBER() + "\nPin Code: " + Nikita.getCard().getPinCode());
     }
 }

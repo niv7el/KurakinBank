@@ -6,6 +6,13 @@ public class Client {
     private boolean isClient;
     private Card card;
 
+    public Client(String name, String surname, boolean isClient) {
+        this.name = name;
+        this.surname = surname;
+        this.isClient = isClient;
+        this.card = new Card();
+    }
+
     public void setClient(boolean client) {
         isClient = client;
     }
